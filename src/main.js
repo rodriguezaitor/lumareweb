@@ -18,7 +18,7 @@ document.querySelector("#app").innerHTML = `
     </div>
 
     <!-- Button Container -->
-    <div class="p-4 pb-safe">
+    <div class="p-2 pb-safe">
       <div class="max-w-2xl mx-auto">
         <a href="#" id="app-store-btn" class="w-full flex items-center justify-center px-6 py-4 bg-black text-white rounded-2xl hover:opacity-90 active:opacity-80 transition-all duration-200 transform hover:scale-105 shadow-2xl">
           <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
