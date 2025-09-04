@@ -5,9 +5,9 @@ import i18n from "./i18n.js";
 document.querySelector("#app").innerHTML = `
   <div class="gradient text-white selection:bg-white/20 h-screen flex flex-col p-4 overflow-hidden">
     <!-- Card Container -->
-    <div class="flex-1">
-      <div class="w-full max-w-2xl mx-auto h-full">
-        <div class="glass rounded-3xl p-8 ring-1 ring-white/10 shadow-2xl h-full flex flex-col">
+    <div class="flex-1 flex">
+      <div class="w-full max-w-2xl mx-auto flex flex-col">
+        <div class="glass rounded-3xl p-8 ring-1 ring-white/10 shadow-2xl flex-1 flex flex-col">
           <!-- Content -->
           <div class="flex-1 flex items-center justify-center">
             <div class="text-center">
