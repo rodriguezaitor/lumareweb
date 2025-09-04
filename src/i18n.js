@@ -124,34 +124,39 @@ class I18n {
     });
   }
 
-  addLanguageSwitcher() {
-    const switcher = document.createElement("div");
-    switcher.className = "language-switcher fixed top-4 right-4 z-50";
-    switcher.innerHTML = `
-      <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-2 border border-gray-200 dark:border-gray-600">
-        <select class="text-sm font-medium text-gray-700 dark:text-gray-300 bg-transparent border-none outline-none cursor-pointer">
-          ${this.supportedLanguages
-            .map(
-              (lang) => `
-            <option value="${lang}" ${
-                lang === this.currentLang ? "selected" : ""
-              }>
-              ${lang === "en" ? "🇺🇸 English" : "🇪🇸 Español"}
-            </option>
-          `
-            )
-            .join("")}
-        </select>
-      </div>
-    `;
+           addLanguageSwitcher() {
+           // Only add language switcher if not on home page
+           if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+             return;
+           }
 
-    const select = switcher.querySelector("select");
-    select.addEventListener("change", (e) => {
-      this.changeLanguage(e.target.value);
-    });
+           const switcher = document.createElement("div");
+           switcher.className = "language-switcher fixed top-4 right-4 z-50";
+           switcher.innerHTML = `
+             <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-2 border border-gray-200 dark:border-gray-600">
+               <select class="text-sm font-medium text-gray-700 dark:text-gray-300 bg-transparent border-none outline-none cursor-pointer">
+                 ${this.supportedLanguages
+                   .map(
+                     (lang) => `
+                   <option value="${lang}" ${
+                       lang === this.currentLang ? "selected" : ""
+                     }>
+                     ${lang === "en" ? "🇺🇸 English" : "🇪🇸 Español"}
+                   </option>
+                 `
+                   )
+                   .join("")}
+               </select>
+             </div>
+           `;
 
-    document.body.appendChild(switcher);
-  }
+           const select = switcher.querySelector("select");
+           select.addEventListener("change", (e) => {
+             this.changeLanguage(e.target.value);
+           });
+
+           document.body.appendChild(switcher);
+         }
 
   async changeLanguage(newLang) {
     if (!this.supportedLanguages.includes(newLang)) return;

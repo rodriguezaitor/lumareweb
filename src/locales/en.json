@@ -1,11 +1,18 @@
 {
-  "title": "Lumare - Hello World",
-  "subtitle": "Welcome to Lumare with Tailwind CSS v4",
-  "status": "Vite + Tailwind CSS v4",
-  "getStarted": "Get Started",
-  "learnMore": "Learn More",
+  "title": "Lumare - Underwater Photo & Video Editor",
+  "subtitle": "Transform your underwater memories into stunning visuals",
+  "hero": {
+    "subtitle": "Underwater photo & video editing for iOS",
+    "description": "A small app for people who shoot and edit underwater. No big promises.",
+    "download": "Download on the",
+    "appStore": "App Store"
+  },
+  "features": {
+    "underwater": "Underwater Optimized",
+    "professional": "Professional Tools",
+    "easy": "Easy to Use"
+  },
   "language": "Language",
-  "exampleLinks": "Example localized links:",
   "home": "Home",
   "about": "About",
   "contact": "Contact",
