@@ -3,7 +3,7 @@ import analytics from "./analytics.js";
 import i18n from "./i18n.js";
 
 document.querySelector("#app").innerHTML = `
-  <div class="min-h-screen gradient text-white selection:bg-white/20">
+  <div class="gradient text-white selection:bg-white/20">
     <main class="mx-auto max-w-2xl px-6 pt-20 pb-24">
       <div class="glass rounded-3xl p-8 ring-1 ring-white/10 shadow-2xl">
         <div class="flex items-center gap-3 mb-6">
