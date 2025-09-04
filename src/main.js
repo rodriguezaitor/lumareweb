@@ -4,8 +4,8 @@ import i18n from "./i18n.js";
 
 document.querySelector("#app").innerHTML = `
   <div class="gradient text-white selection:bg-white/20">
-    <main class="mx-auto max-w-2xl px-6 pt-8 pb-8">
-      <div class="glass rounded-3xl p-8 ring-1 ring-white/10 shadow-2xl min-h-[80vh] flex items-center justify-center">
+    <main class="mx-auto max-w-2xl px-6 pt-4 pb-24">
+      <div class="glass rounded-3xl p-8 ring-1 ring-white/10 shadow-2xl min-h-[calc(100vh-8rem)] flex items-center justify-center">
         <div class="text-center">
           <div class="h-16 w-16 rounded-3xl bg-white/10 flex items-center justify-center text-2xl font-semibold mx-auto mb-4">L</div>
           <h1 class="text-3xl font-semibold tracking-tight mb-2">Lumare</h1>
