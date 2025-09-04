@@ -4,10 +4,19 @@ import { VitePluginRadar } from "vite-plugin-radar";
 export default defineConfig({
   plugins: [
     VitePluginRadar({
-      enableDev: true,
-      gtm: {
-        id: "GTM-NWJZTBW7",
-      },
+      gtm: [
+        {
+          id: "GTM-NWJZTBW7",
+        },
+      ],
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        404: "404.html",
+      },
+    },
+  },
 });

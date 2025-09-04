@@ -1,8 +1,15 @@
 # Clean URLs - remove .html extension
 /*.html /:splat 301
 
-# Handle SPA routing - redirect all non-file requests to index.html
-/* /index.html 200
+# Specific routes first (most specific to least specific)
+/welcome /welcome.html 200
+/feedback /feedback.html 200
+/twitter-mass-unfollow /twitter-mass-unfollow.html 200
+/privacy /privacy.html 200
+/analytics /analytics.html 200
 
-# 404 handling for non-existent routes
-/404 /index.html 404
+# Home page
+/ /index.html 200
+
+# 404 fallback (must be last)
+/* /404.html 404
