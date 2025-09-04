@@ -3,7 +3,7 @@ import analytics from "./analytics.js";
 import i18n from "./i18n.js";
 
 document.querySelector("#app").innerHTML = `
-  <div class="gradient text-white selection:bg-white/20 h-screen flex flex-col p-4">
+  <div class="gradient text-white selection:bg-white/20 h-screen flex flex-col p-4 overflow-hidden">
     <!-- Card Container -->
     <div class="flex-1">
       <div class="w-full max-w-2xl mx-auto h-full">
