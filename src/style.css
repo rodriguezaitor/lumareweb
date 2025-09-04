@@ -49,6 +49,20 @@ body {
   }
 }
 
+/* iOS Safari viewport fixes */
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: 100vh;
+    height: -webkit-fill-available;
+    overflow: hidden;
+  }
+  
+  .gradient {
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+}
+
 /* Custom safe area utilities */
 .pb-safe {
   padding-bottom: calc(1rem + var(--safe-area-inset-bottom));
