@@ -9,7 +9,7 @@
 }
 
 /* Full screen body for iOS */
-body {
+html, body {
   margin: 0;
   padding: 0;
   background: #020617;
@@ -19,7 +19,7 @@ body {
   padding-left: var(--safe-area-inset-left);
   padding-right: var(--safe-area-inset-right);
   /* iOS Safari fixes */
-  height: 100vh;
+  height: 100svh; /* Small viewport height */
   height: 100dvh; /* Dynamic viewport height */
   overflow: hidden; /* Prevent scroll */
 }
@@ -35,8 +35,9 @@ body {
               radial-gradient(900px 500px at -10% 10%, rgba(16,185,129,0.25), transparent 50%),
               linear-gradient(180deg, #020617 0%, #030712 100%);
   /* Ensure gradient covers full screen including safe areas */
-  min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  height: 100svh; /* Small viewport height */
+  height: 100dvh; /* Dynamic viewport height for mobile */
+  overflow: clip; /* Prevent shadows/outlines from adding extra pixels */
 }
 
 /* iOS specific fixes */
