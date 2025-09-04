@@ -1,0 +1,12 @@
+{
+  "title": "Lumare - Hola Mundo",
+  "subtitle": "Bienvenido a Lumare con Tailwind CSS v4",
+  "status": "Vite + Tailwind CSS v4",
+  "getStarted": "Comenzar",
+  "learnMore": "Saber Más",
+  "language": "Idioma",
+  "exampleLinks": "Enlaces localizados de ejemplo:",
+  "home": "Inicio",
+  "about": "Acerca de",
+  "contact": "Contacto"
+}

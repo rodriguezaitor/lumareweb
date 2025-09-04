@@ -1,0 +1,12 @@
+{
+  "title": "Lumare - Hello World",
+  "subtitle": "Welcome to Lumare with Tailwind CSS v4",
+  "status": "Vite + Tailwind CSS v4",
+  "getStarted": "Get Started",
+  "learnMore": "Learn More",
+  "language": "Language",
+  "exampleLinks": "Example localized links:",
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact"
+}

@@ -6,16 +6,8 @@ export default defineConfig({
     VitePluginRadar({
       enableDev: true,
       gtm: {
-        id: "GTM-XXXXXXX", // Replace with your GTM ID
+        id: "GTM-NWJZTBW7",
       },
     }),
   ],
-  build: {
-    outDir: "dist",
-    rollupOptions: {
-      input: {
-        main: "./index.html",
-      },
-    },
-  },
 });
