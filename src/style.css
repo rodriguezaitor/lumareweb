@@ -62,6 +62,12 @@ html, body {
     height: 100vh;
     height: -webkit-fill-available;
   }
+  
+  /* Force flex-1 to work in iOS Safari */
+  .flex-1 {
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+  }
 }
 
 /* Custom safe area utilities */
