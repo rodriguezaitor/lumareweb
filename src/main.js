@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
         label: "ios_app_store_button_black",
       });
 
-      // For now, show coming soon message
-      alert("Coming soon to the App Store! 🚀");
+      // Open App Store with search for "lumare"
+      window.open("https://apps.apple.com/search?term=lumare", "_blank");
     });
   }
 
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
         label: "ios_app_store_button_white",
       });
 
-      // For now, show coming soon message
-      alert("Coming soon to the App Store! 🚀");
+      // Open App Store with search for "lumare"
+      window.open("https://apps.apple.com/search?term=lumare", "_blank");
     });
   }
 });
