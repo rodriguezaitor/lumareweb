@@ -6,7 +6,7 @@ export default defineConfig({
     VitePluginRadar({
       gtm: [
         {
-          id: "GTM-NWJZTBW7",
+          id: "GTM-M23BHP2N",
         },
       ],
     }),

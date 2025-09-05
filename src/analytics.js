@@ -1,7 +1,7 @@
 // Google Tag Manager Analytics Utility
 class Analytics {
   constructor() {
-    this.gtmId = "GTM-NWJZTBW7";
+    this.gtmId = "GTM-M23BHP2N";
     this.isInitialized = false;
     this.init();
   }
