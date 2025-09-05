@@ -69,8 +69,13 @@ class Analytics {
         data: {
           content_name: "Lumare iOS App",
           content_category: "Mobile App Download",
+          content_ids: ["lumare-ios"],
+          content_type: "product",
           value: parameters.value || 0,
           currency: "USD",
+          eventID: `lead_${Date.now()}_${Math.random()
+            .toString(36)
+            .substr(2, 9)}`,
           custom_data: {
             button_type: parameters.label || "unknown",
             category: parameters.category || "conversion",
@@ -80,15 +85,23 @@ class Analytics {
       page_view: {
         type: "standard",
         event: "PageView",
-        data: {},
+        data: {
+          eventID: `pageview_${Date.now()}_${Math.random()
+            .toString(36)
+            .substr(2, 9)}`,
+        },
       },
       contact: {
         type: "standard",
         event: "Contact",
         data: {
           content_name: parameters.content_name || "Contact Form",
+          content_type: "service",
           value: parameters.value || 0,
           currency: "USD",
+          eventID: `contact_${Date.now()}_${Math.random()
+            .toString(36)
+            .substr(2, 9)}`,
         },
       },
     };
@@ -100,8 +113,12 @@ class Analytics {
         data: {
           content_name: parameters.label || eventName,
           content_category: parameters.category || "engagement",
+          content_type: "service",
           value: parameters.value || 0,
           currency: "USD",
+          eventID: `${eventName}_${Date.now()}_${Math.random()
+            .toString(36)
+            .substr(2, 9)}`,
           custom_data: parameters,
         },
       }
